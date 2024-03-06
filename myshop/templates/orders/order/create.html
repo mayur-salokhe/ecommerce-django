@@ -11,11 +11,11 @@ Checkout
     <ul>
         {% for item in cart %}
         <li>{{ item.quantity }} x {{ item.product.name }}
-            <span>${{ item.total_price }}</span>
+            <span>&#8377;{{ item.total_price }}</span>
         </li>
         {% endfor %}
     </ul>
-    <p>Total: ${{ cart.get_total_price }}</p>
+    <p>Total: &#8377;{{ cart.get_total_price }}</p>
 </div>
 <form method="post" class="order-form">
     {{ form.as_p }}
