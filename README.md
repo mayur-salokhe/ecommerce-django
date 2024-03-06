@@ -3,13 +3,11 @@
 This is a Django-based e-commerce website project that allows users to browse products, add them to the cart, and make purchases.
 
 ## Features
-User authentication and registration
-
-Product browsing with filtering and search functionality
-
 Adding products to the shopping cart
 
 Checkout process with order placement
+
+Sending Order Placed Message on email using Celery and RabbitMQ
 
 Admin interface for managing products, orders, and users
 
@@ -22,8 +20,10 @@ Django
 
 HTML/CSS
 
-JavaScript
+Celery
+
+RabbitMQ
 
 Bootstrap (optional)
 
-Database: SQLite (for development), PostgreSQL (recommended for production)
+Database: SQLite (for development), PostgreSQL (for production)
